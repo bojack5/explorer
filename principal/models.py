@@ -4,7 +4,7 @@ class Comentario(models.Model):
     """docstring for Comentario"""
     nombre = models.CharField(max_length=128 , )
     email  = models.EmailField(unique = True)
-    telefono = models.CharField(max_length=20 , default = 0)
+    telefono = models.CharField(max_length=20 ,)
     comentario = models.TextField(default = None)
 
     def __str__(self):
